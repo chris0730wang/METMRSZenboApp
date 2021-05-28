@@ -1,43 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        tools:context=".MainActivity">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout2"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-            <TextView
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/zenbo"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/groupnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Zenbo 5"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/SC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/zenbologo"
+                    android:textAllCaps="false"
+                    android:text="Scan ID"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_shape"
+                    android:shadowColor="#6378A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <Button
+                    android:id="@+id/student1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/student2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/student3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/student4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/student5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/student6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="student"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_shape2"
+                    android:shadowColor="#4C99A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/videobtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:text="Critical thinking"/>
+            <TextView
+                android:id="@+id/studentpoint"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="总金额"
-                android:layout_gravity="center_vertical|end"
-                android:layout_marginRight="20dp"
-                android:id="@+id/sum"
-                />
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
-    <include layout="@layout/content_main" />
+                android:text=""
+                android:textSize="100dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/baseline_add_24"
-         />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/pdetail"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Record"
+                    android:visibility="invisible"/>
 
-</android.support.design.widget.CoordinatorLayout>
+                <Button
+                    android:id="@+id/gdetail"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAllCaps="false"
+                    android:text="Meaning"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/qrcodeimage"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="350dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>

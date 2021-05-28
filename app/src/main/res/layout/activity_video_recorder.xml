@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoRecorderActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/answerstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/answerstudent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/affirmative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerstudent"
+            android:layout_toLeftOf="@+id/white"
+            android:text="Affirmative"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/button_shape5"
+            android:shadowColor="#40A897"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerstudent"
+            android:layout_toRightOf="@+id/white"
+            android:text="Negative"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_shape4"
+            android:shadowColor="#40A897"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/capturevideo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="captureVideo"
+            android:text="Capture Video"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/button_shape3"
+            android:shadowColor="#40A897"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/playvideo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="playVideo"
+            android:text="Play Video"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/button_shape3"
+            android:shadowColor="#40A897"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="done"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/button_shape3"
+            android:shadowColor="#40A897"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

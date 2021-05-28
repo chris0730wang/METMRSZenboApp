@@ -1,1 +1,3 @@
+include ':RobotActivityLibrsry'
+include ':ZenboJuniorSDK'
 include ':app'

@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".MyApplication"
@@ -18,11 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".VideoPlayActivity" />
-        <activity
-            android:name=".VideoRecorderActivity"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VideoActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -37,18 +35,9 @@
             android:name=".qrcode_scanner"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".socketconnector"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
-        <activity
-            android:name=".VocabularyPreviewDetail"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".VocabularyReviewDetail"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

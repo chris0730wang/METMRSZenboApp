@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DjangoNaoBo</string>
+    <string name="app_name">customizedjangonaobo</string>
     <string name="action_settings">Settings</string>
     <string name="item_spend">花费项目</string>
     <string name="money">金额</string>

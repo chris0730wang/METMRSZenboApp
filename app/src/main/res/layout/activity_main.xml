@@ -43,7 +43,7 @@
                     android:id="@+id/groupnum"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Zenbo 5"
+                    android:text="Zenbo 2"
                     android:textSize="25sp"
                     android:gravity="center"
                     android:layout_weight="1"/>
@@ -177,11 +177,24 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/videobtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:id="@+id/readybtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_shape"
+                android:text="Ready to next step !"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_marginTop="20sp"
+                android:id="@+id/readingexplanation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_shape"
+                android:text="課文解釋音檔或影片"
                 android:textAllCaps="false"
-                android:text="Critical thinking"/>
+                android:visibility="invisible"/>
+
             <TextView
                 android:id="@+id/studentpoint"
                 android:layout_width="match_parent"
@@ -220,8 +233,10 @@
         </LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/qrcodeimage"
+        <TextView
+            android:id="@+id/discussion"
+            android:text=""
+            android:textSize="30dp"
             android:layout_width="320dp"
             android:layout_height="320dp"
             android:layout_marginLeft="500dp"
